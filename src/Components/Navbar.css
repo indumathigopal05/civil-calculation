@@ -1,0 +1,42 @@
+/*.css-gh36kb:hover,
+.css-gh36kb[data-hover]*/
+
+.nav_bg {
+    background: #444D58! important;
+    font-family: sans-serif;
+    color: #BCC2CB;
+    text-align: center;
+    font-size: smaller;
+}
+
+.nav_bg button {
+    width: "200px";
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.dropdown span {
+    margin-right: 8px;
+    /* Add spacing between the title and the icon */
+}
+
+.dropdown span:last-child {
+    margin-left: auto;
+    /* Push the icon to the end */
+}
+
+
+/*.css-gh36kb:active,
+.css-gh36kb*/
+
+.nav_bg[data-active] {
+    background: #55616f;
+}
+
+.nav_bg:hover {
+    background: #55616f! important;
+}
