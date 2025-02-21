@@ -7,7 +7,6 @@ import {
   Button,
   Select,
   InputGroup,
-  InputLeftAddon,
   Input,
   InputRightAddon,
   Image,
