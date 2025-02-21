@@ -223,7 +223,7 @@ const ConstructionCost = () => {
             </Box>
 
             {/* Buttons */}
-            <Box p={2} border="none" borderTop="1px solid green">
+            <Box p={2} border="none" borderTop="1px solid lightgray">
               <Flex gap={6} justifyContent="flex-end">
                 <Button p={4} colorScheme="blue" onClick={handleCalculate}>
                   Calculate
