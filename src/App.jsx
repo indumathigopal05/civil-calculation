@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import ConstructionCost from "./Components/ConstructionCost";
 import Navbar from "./Components/Navbar";
 import CementCalculation from "./Components/CementConstruction/CementCalculation";
+import  BrickCalculation  from "./Components/Bricks Calculation/BrickCalculation";
 //import CalculationList from "./Components/Construction-cost";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/Quantity Estimator" element={<QualityEstimator />} />
         <Route path="/constructioncost" element={<ConstructionCost />} />
         <Route path="/cement-concrete" element={<CementCalculation />} />
+        <Route path="/brickCalculation" element={<BrickCalculation />} />
         <Route path="/Concretetechnology" element={<ConcreteTechnology />} />
 
         <Route

@@ -5,7 +5,7 @@ const CalculationList = () => {
   const calculators = [
     { name: "Construction Cost Calculator", path: "/constructioncost" },
     { name: "Cement Concrete Calculator", path: "/cement-concrete" },
-    { name: "Brick Calculator", path: "/brick" },
+    { name: "Brick Calculator", path: "/brickCalculation" },
     { name: "Plastering Calculator", path: "/plastering" },
     { name: "Tank Volume Calculator", path: "/tank-volume" },
     { name: "Carpet Area/Built Up Area/Super Built Up Area Calculator", path: "/area-calculator" },

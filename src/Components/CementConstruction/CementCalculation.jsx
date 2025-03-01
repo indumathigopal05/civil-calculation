@@ -59,11 +59,11 @@ const CementCalculation = () => {
         <Heading fontSize="2xl" color="#BCC2CB" fontFamily="sans-serif">Construction Cost Calculator</Heading>
         <Flex alignItems="center" gap={2}>
           <IconButton bg="white" color="gray" icon={<GoHome />} />
-          <Text>Home</Text>
+          <Text   _hover={{ textDecoration: "underline", color: "blue.600" }}>Home</Text>
           <Image src={icongreater} w="10px" h="10px" />
-          <Text>Quality Estimator</Text>
+          <Text   _hover={{ textDecoration: "underline", color: "blue.600" }}>Quality Estimator</Text>
           <Image src={icongreater} w="10px" h="10px" />
-          <Text>Construction Cost Estimator</Text>
+          <Text   _hover={{ textDecoration: "underline", color: "blue.600" }}>Construction Cost Estimator</Text>
         </Flex>
       </Box>
       
@@ -134,7 +134,7 @@ const CementCalculation = () => {
             </Box>
         </Flex>
 
-        <Box bg="white" p={4} borderRadius="md" width={{ base: "100%", md: "30%" }}>
+        <Box bg="white" p={4} direction="row"borderRadius="md" width={{ base: "100%", md: "30%" }}>
           <QualityEstimate />
         </Box>
       </Flex>
