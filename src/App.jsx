@@ -9,7 +9,7 @@ import ConstructionCost from "./Components/ConstructionCost";
 import Navbar from "./Components/Navbar";
 import CementCalculation from "./Components/CementConstruction/CementCalculation";
 import  BrickCalculation  from "./Components/Bricks Calculation/BrickCalculation";
-//import CalculationList from "./Components/Construction-cost";
+import Plastering from "./Components/PlasteringCalculation/Plastering";
 
 export default function App() {
   return (
@@ -22,6 +22,7 @@ export default function App() {
         <Route path="/cement-concrete" element={<CementCalculation />} />
         <Route path="/brickCalculation" element={<BrickCalculation />} />
         <Route path="/Concretetechnology" element={<ConcreteTechnology />} />
+        <Route path="/plastering" element={<Plastering />} />
 
         <Route
           path="/geotechnical-engineering"

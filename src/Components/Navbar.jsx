@@ -24,7 +24,7 @@ import Logo1 from "../assets/Civil_Logo1.png";
 import Logo from "../assets/Civil_Logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-//import imageheader from "../assets/imageheader.jpg";
+
 
 const menuData = [
   {
@@ -123,7 +123,7 @@ const Navbar = () => {
 
         {/* Mobile View: Display only one logo (Logo1) */}
         <Box display={{ base: "none", md: "none" }} textAlign="left" mb={4} >
-          <Image src={Logo1} alt="Logo1" width="200px"  />
+          <Image src={Logo1} alt="Logo1" width="200px"   />
         </Box>
         <Box
           bg="#444D58"

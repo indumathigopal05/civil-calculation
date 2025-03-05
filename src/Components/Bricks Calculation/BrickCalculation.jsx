@@ -344,8 +344,8 @@ const BrickCalculation = () => {
             </Flex>
           </Box>
 
-          <Box display="flex" flexDirection={{base:"column",md:"row"}} bg="white">
-            <Box bg="white" p={5} >
+          <Box display="flex" flexDirection={{base:"column",md:"row"}} bg="white" >
+            <Box bg="white" p={5}alignItems="center" justifyContent="center">
               <Text fontWeight="bold" p={4}>
                 Total Bricks Required:
               </Text>
