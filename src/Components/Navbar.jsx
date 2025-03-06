@@ -111,13 +111,15 @@ const Navbar = () => {
           alignItems="center"
           display={{ base: "none", md: "flex" }}
           justifyContent="space-between"
-          mb={4}
+          //mb={4}
           gap={4}
-          p={4}
+          //p={4}
           ml={5}
+         
         >
-          <Image src={Logo1} alt="Logo1" width="50" height="45" />
-          <Image src={Logo} mr={5} alt="Logo" width="50" height="50" />
+          <Box width="135.66px" height="80px"><Image src={Logo1} alt="Logo1" width="100%" height="100%" objectFit="contain" /></Box>
+          
+         <Box width="80px" height="40px" mr={5}><Image src={Logo} alt="Logo" width="100%" height="100%"  objectFit="contain"/></Box> 
         </Box>
 
         {/* Mobile View: Display only one logo (Logo1) */}
