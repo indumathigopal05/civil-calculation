@@ -1,4 +1,3 @@
-
 import { Box, Text, Image, Flex } from "@chakra-ui/react";
 import React from "react";
 import GooglePlayStore from "../assets/GooglePlayStore.png";
@@ -21,7 +20,12 @@ const MostSearchCom = () => {
           borderRadius="md"
         >
           <Box borderBottom="1px solid #ccc" pb={2} mb={4}>
-            <Text fontSize="2xl" color="#666666" fontWeight="bold" fontFamily="sans-serif">
+            <Text
+              fontSize="2xl"
+              color="#666666"
+              fontWeight="bold"
+              fontFamily="sans-serif"
+            >
               Mobile App - Civil Quality Estimator
             </Text>
           </Box>
@@ -32,12 +36,19 @@ const MostSearchCom = () => {
             etc.
           </Text>
           <Flex justifyContent="center" mb={6}>
-            <Image width={{ base: "50%", md: "30%" }} src={GooglePlayStore} />
+            <Image
+              width={{ base: "50%", md: "40%" }}
+              height={{ base: "200px", md: "60px" }}
+              src={GooglePlayStore}
+              alt="GooglePlayStore"
+            />
           </Flex>
           <Flex justifyContent="center">
             <Image
-              width={{ base: "80%", md: "60%" }}
+              width={{ base: "80%", md: "70%" }} 
+              height={{ base: "250px", md: "200px" }} 
               src={MobileApp_CivilQuantityEstimator}
+              alt="MobileAppCivilQuantityEstimator"
             />
           </Flex>
         </Box>

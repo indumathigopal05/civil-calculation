@@ -25,7 +25,6 @@ import Logo from "../assets/Civil_Logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-
 const menuData = [
   {
     title: "Quantity Estimator",
@@ -117,13 +116,14 @@ const Navbar = () => {
           p={4}
           ml={5}
         >
-          <Image src={Logo1} alt="Logo1" width="15%" />
-          <Image src={Logo} mr={5} alt="Logo" width="90px" />
+          <Image src={Logo1} alt="Logo1" width="50" height="45" />
+          <Image src={Logo} mr={5} alt="Logo" width="50" height="50" />
         </Box>
 
         {/* Mobile View: Display only one logo (Logo1) */}
-        <Box display={{ base: "none", md: "none" }} textAlign="left" mb={4} >
-          <Image src={Logo1} alt="Logo1" width="200px"   />
+        <Box display={{ base: "none", md: "none" }} textAlign="left" mb={4}>
+          <Image src={Logo1} alt="Logo1" width={{ base: "40", md: "block" }}
+              height={{ base: "30", md: "block" }} />
         </Box>
         <Box
           bg="#444D58"
@@ -240,11 +240,17 @@ const Navbar = () => {
             display={{ base: "flex", md: "none" }}
             alignItems="center"
             justifyContent="space-between"
-            p={2}
+            p={3}
             bg="white"
           >
             {/* Logo1 with margin-left */}
-            <Image src={Logo1} alt="Logo1" width="150px" ml={2} />
+            <Image
+              src={Logo1}
+              alt="Logo1"
+              width={{ base: "40", md: "block" }}
+              height={{ base: "30", md: "block" }}
+              ml={2}
+            />
 
             {/* IconButton with margin-right */}
             <IconButton
