@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React,{ useState,useEffect,lazy } from "react";
 import {
   Flex,
   Box,
@@ -13,14 +13,23 @@ import {
 } from "@chakra-ui/react";
 import QualityEstimate from "../Components/QualityEstimate";
 import IconCostEstimator from "../assets/IconCostEstimator.png";
-import CalculationCost from "./CalculationCost";
-import QualityCost from "./QualityCost";
-import Formulas from "./Formulas";
+//import CalculationCost from "./CalculationCost";
+//import QualityCost from "./QualityCost";
+//import Formulas from "./Formulas";
 import { GoHome } from "react-icons/go";
 import icongreater from "../assets/icongreater.png";
 
+const CalculationCost = lazy(() => import("./CalculationCost"));
+const QualityCost = lazy(() => import("./QualityCost"));
+const Formulas = lazy(() => import("./Formulas"));
+
 const ConstructionCost = () => {
+
+  
+ 
   // State for input values
+  const [loading, setLoading] = useState(true);
+
   const [buildupArea, setBuildupArea] = useState(1000);
   const [approxCost, setApproxCost] = useState(1000);
   const [totalCost, setTotalCost] = useState(null);
@@ -39,6 +48,16 @@ const ConstructionCost = () => {
   const [paintQuantity, setPaintQuantity] = useState(180);
   const [brickQuantity, setBrickQuantity] = useState(8000);
   const [flooringQuantity, setFlooringQuantity] = useState(1300);
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Simulate a delay for lazy loading
+  }, []);
+  if (loading) {
+    return <div>Loading Construction Cost...</div>;
+  }
 
   // Calculate Total Cost & Material Costs
   const handleCalculate = () => {

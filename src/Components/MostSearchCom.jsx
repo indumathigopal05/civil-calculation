@@ -37,16 +37,17 @@ const MostSearchCom = () => {
           </Text>
           <Flex justifyContent="center" mb={6}>
             <Image
-              width={{ base: "50%", md: "40%" }}
-              height={{ base: "200px", md: "60px" }}
+              width={{ base: "115.15px", md: "115.15px" }}
+              height={{ base: "35px", md: "35px" }}
               src={GooglePlayStore}
               alt="GooglePlayStore"
             />
           </Flex>
+
           <Flex justifyContent="center">
             <Image
-              width={{ base: "80%", md: "70%" }} 
-              height={{ base: "250px", md: "200px" }} 
+              width={{ base: "217.33px", md: "217.33px" }}
+              height={{ base: "216.78px", md: "216.78px" }}
               src={MobileApp_CivilQuantityEstimator}
               alt="MobileAppCivilQuantityEstimator"
             />
